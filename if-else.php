@@ -24,7 +24,7 @@ if ($idade >= 18) {
 //Utilizando ou = ||
 //Utilizando ou = or
 
-$age = 20;
+$age = 10;
 $name = "Rui";
 
 if ($age == 20 or $name == "Rui"){
@@ -43,4 +43,10 @@ if ($age == 20 && $name == "Rui"){
 } else {
     echo "Não atingiu a condição" . PHP_EOL;
 }
+
+echo "Testando sem chaves" . PHP_EOL;
+
+if ($age >= 18) echo "maior de idade" . PHP_EOL;
+else echo "menor de idade" . PHP_EOL;
+
 ?>
