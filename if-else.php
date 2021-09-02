@@ -43,6 +43,4 @@ if ($age == 20 && $name == "Rui"){
 } else {
     echo "Não atingiu a condição" . PHP_EOL;
 }
-
-
 ?>
