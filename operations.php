@@ -32,3 +32,5 @@ echo "\nDivisão\n";
 echo $divisao, "\n";
 echo "Potência: ", $potencia, "\n";
 echo "MOD: ", $restoDaDivisao, "\n";
+
+?>
