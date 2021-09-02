@@ -1,5 +1,5 @@
 #Learning PHP
 
-## Init steps
+## Initial steps
 
 - Author: Rui Nascimento 
