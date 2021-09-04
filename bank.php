@@ -9,7 +9,8 @@ echo "Saldo: " . $contasCorrentes['123.456.789.01']['saldo'] . PHP_EOL;
 $contasCorrentes['123.456.789.01']['saldo'] += 500;
 echo "Saldo: " . $contasCorrentes['123.456.789.01']['saldo'] . PHP_EOL;
 
-function sacar($valor, $conta) {
+function sacar(float $valor, array $conta)
+{
     if ($conta['saldo'] >= $valor && $valor > 0) {
         $conta['saldo'] -= $valor;
         echo "Saldo realizado com sucesso" . PHP_EOL;
@@ -22,3 +23,16 @@ function sacar($valor, $conta) {
 sacar( 110, $conta1);
 
 echo $conta1['saldo'] . PHP_EOL;
+
+function depositar(float $valor, array $conta)
+{
+    if ($valor > 0) {
+        $conta['saldo'] += $valor;
+        echo "Depósito realizado com sucesso" . PHP_EOL;
+        echo $conta['saldo'] . PHP_EOL;
+    } else {
+        echo "Impossível realiza operação" . PHP_EOL;
+    }
+}
+
+depositar(1, $conta1);
